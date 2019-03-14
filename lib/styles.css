@@ -1,0 +1,23 @@
+body {
+  font-family: "Courier New", courier;
+  margin: 0 auto;
+}
+
+button {
+  font-family: "Courier New", courier;
+}
+#background {
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+  min-height: 100vh;
+  min-width: 100vw;
+  filter: hue-rotate(180);
+  filter: invert(100);
+  opacity: 0.2;
+  filter: contrast(100);
+}
