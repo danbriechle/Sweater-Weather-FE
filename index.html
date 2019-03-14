@@ -3,9 +3,10 @@
 <head>
   <meta charset="utf-8">
   <title>Sweater Weather</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./lib/styles.css">
 </head>
 <body>
+  
       <!--  the a tag below can link you to another HTML page  -->
       <!--  if you click the button in the browser right now, you'll get an error because that is not a real file path -->
   <nav>
@@ -13,10 +14,8 @@
   </nav>
 
   <div class="current">
-    <div id="weather">
-      <p>Weather</p>
-      <p>Location</p>
-    </div>
+    <div id="cityState"></div>
+    <div id="temp"></div>
 
     <div id="details">
       <p>things you should know</p>
@@ -28,10 +27,10 @@
   </div>
 
 
-  <script src="lib/index.js" ></script>
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
   </script>
+  <script src="lib/index.js" ></script>
   <script src="main.bundle.js"></script>
 </body>
 </html>
