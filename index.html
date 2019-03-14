@@ -7,25 +7,60 @@
 </head>
 <body>
   <nav>
+    <h1>Sweater Weather</h1>
     <a href="login.html"><button class="default-button">Log In</button></a>
     <button id="refresh-image">Refresh Image</button>
   </nav>
 
-  <div class="current">
-    <div id="cityState"></div>
-    <div id="temp"></div>
+  <div class="Current Weather">
+    <div class="glance">
+      <div class="glance-left-side">
+        <div id="icon"></div>
+        <div id="description"></div>
+        <div id="temp"></div>
+          <div class="low-high">
+            <div id="low"></div>
+            <div id="high"></div>
+          </div>
+      </div>
+      <div class="glance-right-side">
+        <div id="cityState"></div>
+        <div id="time/date"></div>
+        <button id="change-location">Change Location</button>
+      </div>
+    </div>
 
-    <div id="details">
-      <p>things you should know</p>
+    <div class="Details">
+      <div class="details-left-side">
+        <div id="icon"></div>
+        <div id="description"></div>
+        <div id="tonight"></div>
+      </div>
+
+      <div class="details-right-side">
+         <div id="feels">Feels like</div>
+         <div id="humidity">Humidity</div>
+         <div id="visibility">Visibility</div>
+         <div id="uv-index">UV Index</div>
+      </div>
     </div>
   </div>
 
-  <div id="weekly-forecast">
-    <p>weekly forecast</p>
+  <div class="weekly-forecast">
+    <div class="time-temp-bar">
+      <div id="time"></div>
+      <div id="temp"></div>
+    </div>
+
+    <div class="five-day-list">
+      <div id="day"></div>
+      <div id="icon"></div>
+      <div id="chance-of-rain"></div>
+      <div id="high"></div>
+      <div id="low"></div>
+    </div>
   </div>
-
-
-
+  
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
   </script>
