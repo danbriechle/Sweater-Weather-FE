@@ -1,10 +1,13 @@
 body {
+  justify-content: center;
   font-family: "Courier New", courier;
-  margin: 0 auto;
+  margin: auto;
+  color: #FFFFFF;
 }
 
 button {
   font-family: "Courier New", courier;
+  margin: 6px;
 }
 #background {
   top: 0;
@@ -19,5 +22,88 @@ button {
   filter: hue-rotate(180);
   filter: invert(100);
   opacity: 0.2;
-  filter: contrast(100);
+  filter: contrast();
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  color: #222222;
+  background-color: #7CFFCB;
+  margin-bottom: 12px;
+}
+
+#nav-buttons {
+  padding-top: 36px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+}
+button {
+  width: 84px;
+  height: 26px;
+  border-radius: 18px;
+  font-weight: bold;
+}
+
+#title {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 20px;
+  position: relative;
+  padding-top: 12px;
+  padding-left: 20px;
+}
+
+.current-weather {
+  display: flex;
+  flex-direction: column;
+}
+
+.glance {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 70px;
+}
+.glance-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: #4B4E6D;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #95A3B3;
+  border-radius: 8px;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+.glance-right-side {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #4B4E6D;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #95A3B3;
+  border-radius: 8px;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
 }

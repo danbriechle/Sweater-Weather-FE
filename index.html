@@ -7,24 +7,65 @@
 </head>
 <body>
   <nav>
-    <a href="login.html"><button class="default-button">Log In</button></a>
-    <button id="refresh-image">Refresh Image</button>
+    <div id=title>Sweater Weather</div>
+    <div id="nav-buttons">
+      <a href="login.html"><button class="default-button">Log In</button></a>
+      <button id="refresh-image">Refresh Image</button>
+    </div>
   </nav>
 
-  <div class="current">
-    <div id="cityState"></div>
-    <div id="temp"></div>
+  <div class="current-weather">
+    <div class="glance">
+      <div class="glance-left-side">
+        <h1 id="temp"></h1>
+          <div class="low-high">
+            <div><span>HI: </span><span id="high"></span></div>
+            <div><span>LOW: </span><span id="low"></span></div>
+            <button id="daily-details">Daily Details</button>
+          </div>
+      </div>
+      <div class="glance-right-side">
+            <h2 id="cityState"></h2>
+        <h3> United States</h3>
+        <div id="date"></div>
+        <div id="time"> 11:11</div>
+        <button id="change-location">Change Location</button>
+      </div>
+    </div>
 
-    <div id="details">
-      <p>things you should know</p>
+    <div class="Details">
+      <div class="details-left-side">
+        <h3>Details</h3>
+        <div id="details-summary"></div>
+      </div>
+
+      <div class="details-right-side">
+         <div><span>Feels Like: </span><span id="feels"></span> </div>
+
+         <div><span>Humidity: </span><span id="humidity"></span></div>
+
+         <div><span>Visibility: </span><span id="visibility"></span></div>
+
+         <div><span>UV Index: </span><span id="uv-index"></span></div>
+
+      </div>
     </div>
   </div>
 
-  <div id="weekly-forecast">
-    <p>weekly forecast</p>
+  <div class="weekly-forecast">
+    <div class="time-temp-bar">
+      <div id="time"></div>
+      <div id="temp"></div>
+    </div>
+
+    <div class="five-day-list">
+      <div id="day"></div>
+      <div id="icon"></div>
+      <div id="chance-of-rain"></div>
+      <div id="high"></div>
+      <div id="low"></div>
+    </div>
   </div>
-
-
 
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
