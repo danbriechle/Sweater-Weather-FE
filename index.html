@@ -15,17 +15,18 @@
   <div class="Current Weather">
     <div class="glance">
       <div class="glance-left-side">
-        <div id="summary"></div>
-        <div id="temp"></div>
+        <span id="temp"></span>
           <div class="low-high">
-            <div id="low"></div>
-            <div id="high"></div>
+            <div><span>HI: </span><span id="high"></span></div>
+            <div><span>LOW: </span><span id="low"></span></div>
+            <button id="daily-details">Daily Details</button>
           </div>
       </div>
       <div class="glance-right-side">
-        <div id="cityState"></div>
+        <h2 id="cityState"></h2>
         <h3> United States</h3>
-        <div id="time-date"></div>
+        <div id="date"></div>
+        <div id="time"> 11:11</div>
         <button id="change-location">Change Location</button>
       </div>
     </div>
@@ -37,14 +38,14 @@
       </div>
 
       <div class="details-right-side">
-         <p>Feels Like</p>
-         <div id="feels"></div>
-         <p>Humidity</p>
-         <div id="humidity"></div>
-         <p>Visibility</p>
-         <div id="visibility"></div>
-         <p>UV Index</p>
-         <div id="uv-index"></div>
+         <div><span>Feels Like: </span><span id="feels"></span> </div>
+
+         <div><span>Humidity: </span><span id="humidity"></span></div>
+
+         <div><span>Visibility: </span><span id="visibility"></span></div>
+
+         <div><span>UV Index: </span><span id="uv-index"></span></div>
+
       </div>
     </div>
   </div>
