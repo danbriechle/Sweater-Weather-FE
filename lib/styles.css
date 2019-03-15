@@ -1,10 +1,12 @@
 body {
+  justify-content: center;
   font-family: "Courier New", courier;
-  margin: 0 auto;
+  margin: auto;
 }
 
 button {
   font-family: "Courier New", courier;
+  margin: 6px;
 }
 #background {
   top: 0;
@@ -20,4 +22,70 @@ button {
   filter: invert(100);
   opacity: 0.2;
   filter: contrast(100);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  background-color: #42f4dc;
+  margin-bottom: 12px;
+}
+
+#nav-buttons {
+  padding-top: 36px;
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+}
+button {
+  width: 84px;
+  height: 26px;
+  border-radius: 18px;
+  font-weight: bold;
+}
+
+#title {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 20px;
+  position: relative;
+  padding-top: 12px;
+  padding-left: 20px;
+}
+
+
+
+.glance {
+  display: flex;
+  flex-direction: row;
+}
+
+.glance-left-side {
+  align-items: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #42f4dc;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+.glance-right-side {
+  align-items: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #42f4dc;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+
+
+.current-weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
 }
