@@ -1,7 +1,9 @@
 body {
   font-family: "Courier New", courier;
-  color: #FFFFFF;
+  color: #BCB8B1;
   margin: auto;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #301014;
 }
 
 #background {
@@ -15,9 +17,9 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   filter: hue-rotate(180);
-  filter: invert(180);
-  opacity: 0.2;
-  filter: contrast();
+  filter: invert(100);
+  opacity: 0.7;
+  filter: contrast(100);
 }
 
 nav {
@@ -25,7 +27,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   height: 100px;
-  color: #222222;
   background-color: #7CFFCB;
   margin-bottom: 12px;
 }
@@ -41,8 +42,12 @@ button {
   margin: 6px;
   width: 84px;
   height: 30px;
+  border-color: #8A817C;
+  border-width: 1px;
   border-radius: 8px;
   font-weight: bold;
+  background-color: #BCB8B1;
+  color: #301014;
 }
 
 #title {
@@ -51,6 +56,9 @@ button {
   letter-spacing: 20px;
   padding-top: 12px;
   padding-left: 20px;
+  color: #301014;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: #BCB8B1;
 }
 
 .weather {
@@ -68,8 +76,11 @@ button {
 }
 
 h1 {
-  font-size: 70px;
-  margin: 0;
+  font-size: 88px;
+  margin-left: 50px;
+  margin-top: 12px;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
 h2 {
@@ -85,8 +96,8 @@ h3 {
 .glance-left-side {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  text-align: center;
+  justify-content: flex-start;
+  text-align: left;
   background: #4B4E6D;
   border-style: solid;
   border-width: 3px;
@@ -97,9 +108,9 @@ h3 {
   height: 200px;
 }
 
-.show-details-button {
+.hourly-button {
   width: 300px;
-  padding-top: 12px;
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -108,7 +119,7 @@ h3 {
 .low-high {
   width: 250px;
   text-align: right;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-left: 12px;
 }
 
@@ -141,12 +152,16 @@ input {
   height: 26px;
   border-radius: 8px;
   font-weight: bold;
+  color: #301014;
+  border-color: #301014;
+  border-width: 2px;
 }
+
 
 .details {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   text-align: center;
   background: #4B4E6D;
   border-style: solid;
@@ -158,9 +173,9 @@ input {
   height: 200px;
 }
 
-.hide-details-button {
+.five-day-button {
   width: 300px;
-  padding-top: 16px;
+  margin-top: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -170,7 +185,7 @@ input {
   width: 960px;
   height: 160px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   background: #4B4E6D;
   border-style: solid;
@@ -178,4 +193,30 @@ input {
   border-color: #95A3B3;
   border-radius: 8px;
   margin: auto;
+}
+.forecast-title {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-size: 36px;
+  width: 960px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.time-bar {
+  margin-top: 20px;
+  width: 960px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 12px;
+}
+
+.temp-bar {
+  width: 960px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }

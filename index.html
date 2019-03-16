@@ -9,7 +9,6 @@
   <nav>
     <div id=title>Sweater Weather</div>
     <div id="nav-buttons">
-      <a href="login.html"><button class="default-button">Log In</button></a>
       <button id="refresh-image">Refresh Image</button>
     </div>
   </nav>
@@ -23,8 +22,8 @@
           <div><span>LOW: </span><span id="low"></span></div>
         </div>
 
-        <div class="show-details-button">
-          <button id="show-daily-details">Show Daily Details</button>
+        <div class="hourly-button">
+        <button id="hourly-forecast">Hourly Forecast</button>
         </div>
       </div>
       <div class="glance-right-side">
@@ -46,40 +45,64 @@
       <div><span>Humidity: </span><span id="humidity"></span></div>
       <div><span>Visibility: </span><span id="visibility"></span></div>
       <div><span>UV Index: </span><span id="uv-index"></span></div>
-      <div class="hide-details-button">
-        <button id="hide-daily-details">Hide Daily Details</button>
+      <div class="five-day-button">
+        <button id="five-day-forecast">Five Day Forecast</button>
       </div>
     </div>
   </div>
 
   <div class="hourly-forecast">
+    <div class="forecast-title">Hourly Forecast
+       <div id="time"> 11:11</div>
+    </div>
     <div class="time-bar">
         <div id="time_1"></div>
         <div id="time_2"></div>
         <div id="time_3"></div>
         <div id="time_4"></div>
         <div id="time_5"></div>
-        <div id="time_5"></div>
+        <div id="time_6"></div>
         <div id="time_7"></div>
+        <div id="time_8"></div>
     </div>
     <div class="temp-bar">
-      <div id="time_8"></div>
       <div id="temp_1"></div>
       <div id="temp_2"></div>
       <div id="temp_3"></div>
       <div id="temp_4"></div>
       <div id="temp_5"></div>
-      <div id="temp_5"></div>
+      <div id="temp_6"></div>
       <div id="temp_7"></div>
       <div id="temp_8"></div>
     </div>
-  </div>
+
     <div class="five-day-list">
-      <div id="day"></div>
-      <div id="icon"></div>
-      <div id="chance-of-rain"></div>
-      <div id="high"></div>
-      <div id="low"></div>
+      <div class="day">
+        <div id="1-day"></div>
+        <div id="2-day"></div>
+        <div id="3-day"></div>
+        <div id="4-day"></div>
+        <div id="5-day"></div>
+
+      </div>
+      <div id="1-chance-of-rain"></div>
+
+      <div id="1-five-high"></div>
+      <div id="1-five-low"></div>
+      <div id="2-chance-of-rain"></div>
+
+      <div id="2-five-high"></div>
+      <div id="2-five-low"></div>
+      <div id="3-chance-of-rain"></div>
+      <div id="3-five-high"></div>
+      <div id="3-five-low"></div>
+      <div id="4-chance-of-rain"></div>
+
+      <div id="4-five-high"></div>
+      <div id="4-five-low"></div>
+      <div id="5-chance-of-rain"></div>
+      <div id="5-five-high"></div>
+      <div id="5-five-low"></div>
     </div>
 
 
