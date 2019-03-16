@@ -1,14 +1,9 @@
 body {
-  justify-content: center;
   font-family: "Courier New", courier;
-  margin: auto;
   color: #FFFFFF;
+  margin: auto;
 }
 
-button {
-  font-family: "Courier New", courier;
-  margin: 6px;
-}
 #background {
   top: 0;
   left: 0;
@@ -20,7 +15,7 @@ button {
   min-height: 100vh;
   min-width: 100vw;
   filter: hue-rotate(180);
-  filter: invert(100);
+  filter: invert(180);
   opacity: 0.2;
   filter: contrast();
 }
@@ -29,7 +24,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 80px;
+  height: 100px;
   color: #222222;
   background-color: #7CFFCB;
   margin-bottom: 12px;
@@ -42,9 +37,11 @@ nav {
   padding-right: 20px;
 }
 button {
+  font-family: "Courier New", courier;
+  margin: 6px;
   width: 84px;
-  height: 26px;
-  border-radius: 18px;
+  height: 30px;
+  border-radius: 8px;
   font-weight: bold;
 }
 
@@ -52,14 +49,16 @@ button {
   font-size: 60px;
   font-weight: bold;
   letter-spacing: 20px;
-  position: relative;
   padding-top: 12px;
   padding-left: 20px;
 }
 
-.current-weather {
+.weather {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 24px;
+  margin-top: 24px;
 }
 
 .glance {
@@ -70,11 +69,23 @@ button {
 
 h1 {
   font-size: 70px;
+  margin: 0;
+}
+
+h2 {
+ font-size: 40px;
+  margin: 6px;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 6px;
+
 }
 .glance-left-side {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   text-align: center;
   background: #4B4E6D;
   border-style: solid;
@@ -83,16 +94,24 @@ h1 {
   border-radius: 8px;
   margin: 10px;
   width: 300px;
-  height: 300px;
+  height: 200px;
 }
 
-h2 {
-  font-size: 40px;
+.show-details-button {
+  width: 300px;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-h3 {
-  font-size: 30px;
+.low-high {
+  width: 250px;
+  text-align: right;
+  margin-top: 20px;
+  margin-left: 12px;
 }
+
 .glance-right-side {
   text-align: center;
   display: flex;
@@ -105,5 +124,58 @@ h3 {
   border-radius: 8px;
   margin: 10px;
   width: 300px;
-  height: 300px;
+  height: 200px;
+}
+
+.location-container {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+input {
+  font-family: "Courier New", courier;
+  margin: 6px;
+  width: 84px;
+  height: 26px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  background: #4B4E6D;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #95A3B3;
+  border-radius: 8px;
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+}
+
+.hide-details-button {
+  width: 300px;
+  padding-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.hourly-forecast {
+  width: 960px;
+  height: 160px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #4B4E6D;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #95A3B3;
+  border-radius: 8px;
+  margin: auto;
 }

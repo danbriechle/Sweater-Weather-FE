@@ -14,50 +14,66 @@
     </div>
   </nav>
 
-  <div class="current-weather">
+  <div class="weather">
     <div class="glance">
       <div class="glance-left-side">
         <h1 id="temp"></h1>
-          <div class="low-high">
-            <div><span>HI: </span><span id="high"></span></div>
-            <div><span>LOW: </span><span id="low"></span></div>
-            <button id="daily-details">Daily Details</button>
-          </div>
+        <div class="low-high">
+          <div><span>HIGH: </span><span id="high"></span></div>
+          <div><span>LOW: </span><span id="low"></span></div>
+        </div>
+
+        <div class="show-details-button">
+          <button id="show-daily-details">Show Daily Details</button>
+        </div>
       </div>
       <div class="glance-right-side">
-            <h2 id="cityState"></h2>
+        <h2 id="cityState"></h2>
         <h3> United States</h3>
         <div id="date"></div>
         <div id="time"> 11:11</div>
-        <button id="change-location">Change Location</button>
+        <div class="location-container">
+          <input type="text" placeholder="City, State" id="city-state-input">
+          <button id="change-location">Change Location</button>
+        </div>
       </div>
     </div>
 
-    <div class="Details">
-      <div class="details-left-side">
-        <h3>Details</h3>
-        <div id="details-summary"></div>
-      </div>
-
-      <div class="details-right-side">
-         <div><span>Feels Like: </span><span id="feels"></span> </div>
-
-         <div><span>Humidity: </span><span id="humidity"></span></div>
-
-         <div><span>Visibility: </span><span id="visibility"></span></div>
-
-         <div><span>UV Index: </span><span id="uv-index"></span></div>
-
+    <div class="details">
+      <h3>Daily Details</h3>
+      <div id="details-summary"></div>
+      <div><span>Feels Like: </span><span id="feels"></span> </div>
+      <div><span>Humidity: </span><span id="humidity"></span></div>
+      <div><span>Visibility: </span><span id="visibility"></span></div>
+      <div><span>UV Index: </span><span id="uv-index"></span></div>
+      <div class="hide-details-button">
+        <button id="hide-daily-details">Hide Daily Details</button>
       </div>
     </div>
   </div>
 
-  <div class="weekly-forecast">
-    <div class="time-temp-bar">
-      <div id="time"></div>
-      <div id="temp"></div>
+  <div class="hourly-forecast">
+    <div class="time-bar">
+        <div id="time_1"></div>
+        <div id="time_2"></div>
+        <div id="time_3"></div>
+        <div id="time_4"></div>
+        <div id="time_5"></div>
+        <div id="time_5"></div>
+        <div id="time_7"></div>
     </div>
-
+    <div class="temp-bar">
+      <div id="time_8"></div>
+      <div id="temp_1"></div>
+      <div id="temp_2"></div>
+      <div id="temp_3"></div>
+      <div id="temp_4"></div>
+      <div id="temp_5"></div>
+      <div id="temp_5"></div>
+      <div id="temp_7"></div>
+      <div id="temp_8"></div>
+    </div>
+  </div>
     <div class="five-day-list">
       <div id="day"></div>
       <div id="icon"></div>
@@ -65,7 +81,7 @@
       <div id="high"></div>
       <div id="low"></div>
     </div>
-  </div>
+
 
   <script
     src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'>
