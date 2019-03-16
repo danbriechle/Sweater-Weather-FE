@@ -193,6 +193,8 @@ input {
   border-color: #95A3B3;
   border-radius: 8px;
   margin: auto;
+  margin-bottom: 12px;
+  padding: 12px;
 }
 .forecast-title {
   margin-top: 10px;
@@ -219,4 +221,44 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.five-day-list {
+  width: 960px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #4B4E6D;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #95A3B3;
+  border-radius: 8px;
+  margin: auto;
+  padding: 12px;
+}
+
+.day {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.chance {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.five-high {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
+}
+.five-low {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
 }
