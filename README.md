@@ -8,6 +8,7 @@ and displays relevant weather data.
 The landing page displays the most current weather data in the top 3 sections
 <img width="1440" alt="Screen Shot 2019-03-17 at 11 42 09 AM" src="https://user-images.githubusercontent.com/42418816/54498583-d2496900-48ce-11e9-992b-c27c3c5ef686.png">
 City weather data is searchable via the input field. This call also generates a new backround image based upon the location.
+
 <img width="242" alt="Screen Shot 2019-03-17 at 3 59 09 PM" src="https://user-images.githubusercontent.com/42418816/54498599-0f156000-48cf-11e9-8f7b-5deec8be3d0f.png">
 # Background Refresh 
 If the highly styled background image is not to your liking you can simply press the background refresh button to generate a 
